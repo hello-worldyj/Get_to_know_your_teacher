@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Upload Media</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Upload Media</h1>
+    <nav><a href="index.html">View library</a></nav>
+  </header>
+
+  <main>
+    <form id="uploadForm">
+      <label>Title: <input id="title" required /></label><br/>
+      <label>Description:<br/><textarea id="description"></textarea></label><br/>
+      <label>Folder: 
+        <select id="folderSelect"><option value="">-- choose --</option></select>
+        <input id="newFolder" placeholder="or create new folder" />
+      </label><br/>
+
+      <label>Choose file:
+        <input id="fileInput" type="file" accept="audio/*,video/*" />
+      </label>
+      <div>
+        <button type="button" id="startAudioRecord">Record audio</button>
+        <button type="button" id="startVideoRecord">Record video</button>
+        <button type="button" id="stopRecord" disabled>Stop recording</button>
+      </div>
+
+      <div id="preview"></div>
+
+      <button type="submit">Upload</button>
+      <div id="status"></div>
+    </form>
+  </main>
+
+  <script type="module" src="upload.js"></script>
+</body>
+</html>
