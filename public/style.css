@@ -1,0 +1,8 @@
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:10px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+main{background:#f7f7f7;padding:16px;border-radius:8px}
+#mediaList{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{background:white;padding:10px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.08)}
+.card h3{margin:0 0 8px 0;font-size:1rem}
+.card p{margin:0 0 8px 0;font-size:0.9rem;color:#333}
+video,audio{width:100%}
